@@ -1,10 +1,10 @@
 # Usage
 
-Bower Install: `bower install ng-responsive-calendar`
+Bower Install: `bower install ng-mt-calendar --save`
 
 Add the calendar module as a dependency to your application module:
 
-    var myAppModule = angular.module('MyApp', ['ui.rCalendar'])
+    var myAppModule = angular.module('MyApp', ['mtCalendar'])
 
 Add the directive in the html page
 
@@ -67,8 +67,8 @@ The callback function triggered when the range or mode is changed if the queryMo
 The callback function triggered when an event is clicked
 
         <calendar ... event-selected="onEventSelected(event)"></calendar>
-    
-    
+
+
         $scope.onEventSelected = function (event) {
             console.log(event.title);
         };
@@ -77,7 +77,7 @@ The callback function triggered when an event is clicked
 The callback function triggered when a date or time is selected
 
         <calendar ... time-selected="onTimeSelected(selectedTime)"></calendar>
-        
+
         $scope.onTimeSelected = function (selectedTime) {
             console.log(event.selectedTime);
         };

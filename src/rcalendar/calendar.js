@@ -1,4 +1,4 @@
-angular.module('ui.rCalendar', [])
+angular.module('mtCalendar', [])
     .constant('calendarConfig', {
         formatDay: 'dd',
         formatDayHeader: 'EEE',
@@ -14,7 +14,7 @@ angular.module('ui.rCalendar', [])
         eventSource: null,
         queryMode: 'local'
     })
-    .controller('ui.rCalendar.CalendarController', ['$scope', '$attrs', '$parse', '$interpolate', '$log', 'dateFilter', 'calendarConfig', function ($scope, $attrs, $parse, $interpolate, $log, dateFilter, calendarConfig) {
+    .controller('mtCalendar.CalendarController', ['$scope', '$attrs', '$parse', '$interpolate', '$log', 'dateFilter', 'calendarConfig', function ($scope, $attrs, $parse, $interpolate, $log, dateFilter, calendarConfig) {
         'use strict';
         var self = this,
             ngModelCtrl = {$setViewValue: angular.noop}; // nullModelCtrl;
@@ -242,7 +242,7 @@ angular.module('ui.rCalendar', [])
                 timeSelected: '&'
             },
             require: ['calendar', '?^ngModel'],
-            controller: 'ui.rCalendar.CalendarController',
+            controller: 'mtCalendar.CalendarController',
             link: function (scope, element, attrs, ctrls) {
                 var calendarCtrl = ctrls[0], ngModelCtrl = ctrls[1];
 
