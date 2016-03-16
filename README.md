@@ -1,22 +1,6 @@
-# ui-rCalendar directive
-
-A pure AngularJS responsive calendar directive    
-If you want to only use it in Ionic framework, please check https://github.com/twinssbc/Ionic-Calendar for the Ionic specific version
-
-# Demo
-http://twinssbc.github.io/AngularJS-ResponsiveCalendar/demo/
-
 # Usage
 
 Bower Install: `bower install ng-responsive-calendar`
-
-Load the necessary dependent files:
-
-    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="<bower lib installation path>/ng-responsive-calendar/dist/css/calendar.min.css"/>
-    <script src="../lib/angular/angular.js"></script>
-    <script src="<bower lib installation path>/ng-responsive-calendar/dist/js/calendar-tpls.min.js"></script>
-
 
 Add the calendar module as a dependency to your application module:
 
