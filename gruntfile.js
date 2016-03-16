@@ -37,8 +37,8 @@ module.exports = function (grunt) {
                 },
                 options: {
                     replacements: [{
-                        pattern: 'angular.module(\'mtCalendar\', [])',
-                        replacement: 'angular.module(\'mtCalendar\', [\'mtCalendar.tpls\'])'
+                        pattern: 'angular.module(\'ui.rCalendar\', [])',
+                        replacement: 'angular.module(\'ui.rCalendar\', [\'ui.rCalendar.tpls\'])'
                     }]
                 }
             }
@@ -56,7 +56,7 @@ module.exports = function (grunt) {
         concat: {
             dist_tpls: {
                 options: {
-                    banner: 'angular.module("mtCalendar.tpls", [' + grunt.file.expand('template/**/*.html').map(enquote) + ']);\n',
+                    banner: 'angular.module("ui.rCalendar.tpls", [' + grunt.file.expand('template/**/*.html').map(enquote) + ']);\n',
                 },
                 src: ['build/src/**/calendar.js',
                     'build/template/**/*.html.js',

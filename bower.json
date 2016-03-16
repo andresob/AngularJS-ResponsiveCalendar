@@ -1,9 +1,9 @@
 {
-    "name": "ng-mt-calendar",
+    "name": "ng-responsive-calendar",
     "version": "0.1.12",
-    "homepage": "https://github.com/andresob/AngularJS-ResponsiveCalendar",
+    "homepage": "https://github.com/twinssbc/AngularJS-ResponsiveCalendar",
     "authors": [
-        "andresob <andresob1213@hotmail.com>"
+        "twinssbc <bocong@hotmail.com>"
     ],
     "description": "A pure AngularJS responsive calendar directive",
     "main": [
@@ -17,7 +17,8 @@
         "responsive"
     ],
     "dependencies": {
-        "angular": "~1.2"
+        "angular": "~1.2",
+        "bootstrap": "~3.0.3"
     },
     "license": "MIT",
     "ignore": [
